@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="web-files/imagem/favicon.ico" />
+  <title>Carnaval - SKOL Floripa</title>
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:url" content="http://skolfloripa.com.br/">
+  <meta property="og:title" content="Carnaval SKOL Floripa 2017">
+  <meta property="og:site_name" content="Carnaval SKOL Floripa 2017">
+  <meta property="og:description" content="Quinta edição do maior carnaval do sul do Brasil.">
+  <meta property="og:image" content="web-files/imagem/og-facebook.png">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="600">
+  <meta property="og:type" content="website">
+  <!-- build:css web-files/css/main.css -->
+  <link rel="stylesheet" href="web-files/css/estilo.css" />
+  <link rel="stylesheet" href="app/components/programacao-skol/programacao-skol.css" />
+  <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="web-files/css/unslider.css" />
+  <link rel="stylesheet" href="web-files/css/unslider-dots.css" />
+  <!-- endbuild -->
+</head>
+<body>
+
+  <div class="wrapper">
+
+    <div class="m-menu-mobile-icon">
+      <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+    </div><!-- end .m-menu-mobile -->
+    
+    <nav class="m-menu">
+      <ul class="m-menu-itens">
+        <li class="m-menu-item">
+        </li><!-- end .m-menu-item -->
+        <li class="m-menu-item">
+          <a href="#programacao" onclick="fecharMenu();">
+            programação
+          </a>
+        </li><!-- end .m-menu-item -->
+        <li class="m-menu-item">
+          <a href="#camarotes" onclick="fecharMenu();">
+            camarotes
+          </a>
+        </li><!-- end .m-menu-item -->
+        <li class="m-menu-item">
+          <a href="#recomendacoes" onclick="fecharMenu();">
+            recomendações
+          </a>
+        </li><!-- end .m-menu-item -->
+        <li class="m-menu-item">
+          <a href="#contato" onclick="fecharMenu();">
+            contato
+          </a>
+        </li><!-- end .m-menu-item -->
+        <li class="m-menu-item">
+          <a href="https://www.facebook.com/SulEntretenimento/" target="_blank" onclick="fecharMenu();">
+            <i class="fa fa-facebook-official fa-lg"></i>
+          </a>
+        </li><!-- end .m-menu-item -->
+        <li class="m-menu-item">
+          <a class="style-efeito-troca-cor" href="http://www.blueticket.com.br" target="_blank" onclick="fecharMenu();">
+            compre seu ingresso
+          </a>
+        </li><!-- end .m-menu-item -->
+      </ul><!-- end .m-menu-itens -->
+      
+      <div class="btn-fechar">
+        <button class="btn-fechar-item" onclick="fecharMenu();">
+          <i class="fa fa-times" aria-hidden="true"></i>
+          Fechar
+        </button>
+      </div><!-- end .btn-fechar -->
+
+    </nav><!-- end .m-menu -->
+
+    <div class="m-index">
+
+      <div class="m-index-box">
+        <img class="m-index-box-img" src="web-files/imagem/carnaval-skol-floripa-2017.svg" />
+      </div><!-- end .m-index-box -->
+
+      <div class="style-efeito-arrow-pulando">
+
+      </div>
+      
+    </div><!-- end .m-index -->
+
+    <div id="programacao" class="m-programacao" ng-app="AppSkol">
+
+      <div class="m-programacao-titulo">
+        <img src="web-files/imagem/icon-disco-skol.svg" />
+        <h1> 
+          <span class="style-is-bold">Confira</span> 
+          Programação
+        </h1>
+        
+        <a class="sytle-btn-comprar-ingresso style-efeito-troca-cor" href="http://www.blueticket.com.br" target="_blank">
+          compre seu ingresso
+        </a>
+
+      </div><!-- end .m-programacao-titulo -->
+
+      <ng-view></ng-view> 
+
+    </div><!-- end .m-programacao -->
+
+    <div id="camarotes" class="m-camarote-skol">
+
+      <div class="m-camarote-skol-box">
+        
+        <div class="m-camarote-skol-img">
+          <img src="web-files/imagem/camarote-skol-floripa.svg" />
+          <h1 class="m-camarote-skol-titulo">PRAÇA FERNANDO MACHADO</h1>
+        </div><!-- end .m-camarote-skol-img -->
+
+        <div class="m-camarote-skol-desc">
+          <ul class="m-camarote-skol-desc-itens">
+            <li class="m-camarote-skol-desc-item">
+              <img src="web-files/imagem/icon-caixa-de-som-skol.svg" />
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item style-color-pink style-is-bold">
+              OPEN BAR
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item">
+              Skol, Skol Beats Senses
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item">
+              Skol Beats Secret, Skol Beats Spirit
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item">
+              Água e Refrigerante
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item">
+              Com direito a Abadá
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item">
+              Censura
+            </li><!-- end .m-camarote-skol-desc-item -->
+            <li class="m-camarote-skol-desc-item">
+              18 anos
+            </li><!-- end .m-camarote-skol-desc-item -->
+          </ul><!-- end .m-camarote-skol-desc-itens -->
+
+          <a class="sytle-btn-comprar-ingresso style-efeito-troca-cor" href="http://www.blueticket.com.br" target="_blank">
+            compre seu ingresso
+          </a>
+
+        </div><!-- end .m-camarote-skol-desc -->
+        
+        <div class="m-camarote-skol-artistas">
+
+          <div class="m-camarote-skol-slider style-shadow-paper">
+
+            <ul>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia dj-alok-titulo"><span>18.FEV</span></li>
+                      <li class="m-camarote-skol-slider-data-hora">DAS 14H ÀS 21H </li>
+                      <li class="m-camarote-skol-slider-data-local dj-alok-local style-color-yellow">_BARRA SUL <br> BALNEÁRIO CAMBORIÚ</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes dj-alok">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo dj-alok-atracoes">_Atrações</li>
+                      <li>14:00 DROPACK</li>
+                      <li>15:00 VINNE</li>
+                      <li>16:00 LIU</li>
+                      <li>17:00 BHASKAR</li>
+                      <li>18:00 ALOK</li>
+                      <li>19:30 SEVENN</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/trio-eletrico.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia">Dom.<span>19</span>.FEV</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo">_Atrações</li>
+                      <li>DJ ALOK</li>
+                      <li>Vem elétrico que o trio é redondo</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/trio-eletrico.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia">Sex.<span>24</span>.FEV</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo">_Atrações</li>
+                      <li>LUDMILA</li>
+                      <li>MC KORINGA</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/ludmilla.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia">Sab.<span>25</span>.FEV</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo">_Atrações</li>
+                      <li>Fábio Dunk</li>
+                      <li>Samba Aí</li>
+                      <li>DJ Anão</li>
+                      <li>DJ Brunão</li>
+                      <li>DJ Dyve</li>
+                      <li>OS HAWAIANOS</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/os_hawaianos.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia">Dom.<span>26</span>.FEV</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo">_Atrações</li>
+                      <li>Turma do Pagode</li>
+                      <li>MC Sapão</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/turma_do_pagode.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia">Seg.<span>27</span>.FEV</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo">_Atrações</li>
+                      <li>POP GAY</li>
+                      <li>LEXA</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/lexa.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+              <li class="m-camarote-skol-slider-item">
+                
+                <div class="m-camarote-skol-slider-box">
+
+                  <div class="m-camarote-skol-slider-data">
+                    <ul>
+                      <li class="m-camarote-skol-slider-data-dia">Ter.<span>28</span>.FEV</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-data -->
+                  
+                  <div class="m-camarote-skol-slider-atracoes">
+                    <ul>
+                      <li class="m-camarote-skol-slider-atracoes-titulo">_Atrações</li>
+                      <li>JOTA QUEST</li>
+                      <li>MELANINA CARIOCA</li>
+                    </ul>
+                  </div><!-- end .m-camarote-skol-slider-atracoes -->
+
+                </div><!-- end .m-camarote-skol-slider-box -->
+
+                <div class="m-camarote-skol-slider-imagem">
+                  <img src="web-files/images/skol-floripa/jquest.png"/>
+                </div><!-- end .m-camarote-skol-slider-imagem -->
+        
+              </li>
+
+            </ul>
+
+          </div><!-- end .m-camarote-skol-slider -->
+
+        </div><!-- end .m-camarote-skol-artistas -->
+
+      </div>
+
+    </div><!-- end .m-camarote-skol -->
+
+    <div class="m-camarote-live">
+
+      <div class="m-camarote-live-box">
+        
+        <div class="m-camarote-live-img">
+          <img src="web-files/imagem/camarote-live.svg" />
+        </div><!-- end .m-camarote-live-img -->
+
+      </div>
+
+      <div class="m-camarote-live-box style-margin-ajust-svg">
+
+        <div class="m-camarote-live-artistas">
+          
+          <div class="m-camarote-live-artistas-hora style-color-roxo">
+            SÁB.<span class="style-color-pink">25</span>.FEV
+          </div><!-- end .m-camarote-live-artistas-hora -->
+
+          <div class="m-camarote-live-artistas-atracoes-titulo style-color-roxo">
+            _Atrações 
+            <div class="m-camarote-live-artistas-atracoes-desc">
+              THIAGO BRAVA
+            </div><!-- end .m-camarote-live-artistas-atracoes-desc -->
+            <div class="m-camarote-live-artistas-atracoes-desc style-is-italic style-color-pink">
+              OS HAWAIANOS
+            </div><!-- end .m-camarote-live-artistas-atracoes-desc -->
+            <div class="m-camarote-live-artistas-atracoes-desc">
+              THIAGO MARTINS
+            </div><!-- end .m-camarote-live-artistas-atracoes-desc -->
+          </div><!-- end .m-camarote-live-artistas-atracoes-titulo -->
+
+          <div class="m-camarote-live-artistas-imagens">
+            <img class="m-camarote-live-artistas-imagens-item" src="web-files/images/tiago-brava.png" />
+            <img class="m-camarote-live-artistas-imagens-item" src="web-files/images/os-hawaianos-live-skol.png" />
+            <img class="m-camarote-live-artistas-imagens-item" src="web-files/images/tiago-martins.png" />
+          </div><!-- end .m-camarote-live-artistas-imagens -->
+
+        </div><!-- end .m-camarote-live-artistas -->
+
+        <div class="m-camarote-live-desc">
+            <ul class="m-camarote-live-desc-itens">
+              <li class="m-camarote-live-desc-item style-color-pink style-is-bold">
+                OPEN BAR
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                Vodka Wyborowa
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                Skol, Skol Beats
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                (Senses, Secret, Spirit)
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                Água, Refrigerante e Suco
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item style-color-pink style-is-bold">
+                OPEN FOOD
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">Massas e risotos</li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item"></li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                Evento com camiseta
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item"></li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                Censura
+              </li><!-- end .m-camarote-live-desc-item -->
+              <li class="m-camarote-live-desc-item">
+                18 anos
+              </li><!-- end .m-camarote-live-desc-item -->
+            </ul><!-- end .m-camarote-live-desc-itens -->
+
+          <a class="sytle-btn-comprar-ingresso" href="http://www.blueticket.com.br" target="_blank">
+            compre seu ingresso
+          </a>
+          
+        </div><!-- end .m-camarote-live-desc -->
+
+      </div><!-- end .m-camarote-live-desc -->
+
+    </div><!-- end .m-camarote-live -->
+
+    <div id="recomendacoes" class="m-recomendacoes">
+
+      <div class="m-recomendacoes-titulo">
+        <h1> RECOMENDAÇÕES </h1>
+        <h3> Dicas para curtir o carnaval com segurança e tranquilidade </h3>
+      </div><!-- end .m-recomendacoes-titulo -->
+    
+      <div class="m-recomendacoes-box">
+
+        <div class="m-recomendacoes-box-item">
+
+          <div class="m-recomendacoes-box-item-img">
+            <img src="web-files/imagem/icon-frutas.svg" />
+          </div><!-- end .m-recomendacoes-box-item-img -->
+
+          <div class="m-recomendacoes-box-item-desc">
+            Procure de alimentar bem, e de preferência, evite carnes e lanches gordurosos.
+          </div><!-- end .m-recomendacoes-box-item-desc -->
+
+        </div><!-- end .m-recomendacoes-box-item -->
+
+        <div class="m-recomendacoes-box-item">
+
+          <div class="m-recomendacoes-box-item-img">
+            <img src="web-files/imagem/icon-camera.svg" />
+          </div><!-- end .m-recomendacoes-box-item-img -->
+
+          <div class="m-recomendacoes-box-item-desc">
+            Evite levar câmeras e objetos de valor para a folia.
+          </div><!-- end .m-recomendacoes-box-item-desc -->
+
+        </div><!-- end .m-recomendacoes-box-item -->
+
+        <div class="m-recomendacoes-box-item">
+
+          <div class="m-recomendacoes-box-item-img">
+            <img src="web-files/imagem/icon-copos.svg" />
+          </div><!-- end .m-recomendacoes-box-item-img -->
+
+          <div class="m-recomendacoes-box-item-desc">
+            Se for beber álcool, intercale com água ou suco, e não exagere.
+          </div><!-- end .m-recomendacoes-box-item-desc -->
+
+        </div><!-- end .m-recomendacoes-box-item -->
+
+        <div class="m-recomendacoes-box-item">
+
+          <div class="m-recomendacoes-box-item-img">
+            <img src="web-files/imagem/icon-volante.svg" />
+          </div><!-- end .m-recomendacoes-box-item-img -->
+
+          <div class="m-recomendacoes-box-item-desc">
+            Se for dirigir, não beba.
+          </div><!-- end .m-recomendacoes-box-item-desc -->
+
+        </div><!-- end .m-recomendacoes-box-item -->
+
+        <div class="m-recomendacoes-box-item">
+
+          <div class="m-recomendacoes-box-item-img">
+            <img src="web-files/imagem/icon-sexo-seguro.svg" />
+          </div><!-- end .m-recomendacoes-box-item-img -->
+
+          <div class="m-recomendacoes-box-item-desc">
+            Onde tem festa, tem camisinha.
+          </div><!-- end .m-recomendacoes-box-item-desc -->
+
+        </div><!-- end .m-recomendacoes-box-item -->
+
+        <div class="m-recomendacoes-box-item">
+
+          <div class="m-recomendacoes-box-item-img">
+            <img src="web-files/imagem/icon-18.svg" />
+          </div><!-- end .m-recomendacoes-box-item-img -->
+
+          <div class="m-recomendacoes-box-item-desc">
+            Bebida alcoólica é proibida para menores de 18 anos.
+          </div><!-- end .m-recomendacoes-box-item-desc -->
+
+        </div><!-- end .m-recomendacoes-box-item -->
+        
+      </div><!-- end .m-recomendacoes-box -->
+
+      <div id="contato" class="m-recomendacoes-contato">
+          
+        <h1 class="m-recomendacoes-contato-titulo">
+          CONTATO
+        </h1>
+
+        <div class="m-recomendacoes-contato-box">
+            
+          <div class="m-recomendacoes-contato-img">
+            <img src="web-files/imagem/icon-disco-skol.svg" />
+          </div><!-- end .m-recomendacoes-contato-img -->
+
+          <div class="m-recomendacoes-contato-itens">
+
+            <div class="m-recomendacoes-contato-item style-background-pink">
+              (48) 3369.4287
+            </div><!-- end .m-recomendacoes-contato-item -->
+
+            <div class="m-recomendacoes-contato-item">
+              <a href="https://www.facebook.com/SulEntretenimento/" target="_blank">
+                <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+              </a>
+            </div><!-- end .m-recomendacoes-contato-item -->
+
+          </div><!-- end .m-recomendacoes-contato-email -->
+
+          <div class="m-recomendacoes-contato-img">
+            <img src="web-files/imagem/icon-garrafa-skol.svg" />
+          </div><!-- end .m-recomendacoes-contato-img -->
+
+        </div><!-- end .m-recomendacoes-contato-box -->
+
+      </div><!-- end .m-recomendacoes-contato -->
+
+      <div class="m-desenvolvido">
+        <p>
+          © 2017 Sul Entretenimento. Todos os direitos reservados.
+        </p>
+        <p>
+          Desenvolvido por <a href="http://agenciamotriz.com.br/" target="_blank">MOTRIZ</a>
+        </p>
+      </div><!-- end .m-desenvolvido -->
+
+    </div><!-- end .m-recomendacoes -->
+
+  </div><!-- end .wrapper -->
+
+  <!-- build:js web-files/js/app.min.js  -->
+  <script async src="web-files/js/efeito-parallax.js"></script>
+  <script async src="web-files/js/menu-slide.js"></script>
+  <!-- endbuild -->
+  
+  <!-- jquery move swipe -->
+  <script src="web-files/js/jquery.min.js"></script>
+  <script src="web-files/js/jquery.event.move.js"></script>
+  <script src="web-files/js/jquery.event.swipe.js"></script>
+
+  <!-- build:js web-files/js/component-slider.min.js  -->
+  <script src="web-files/js/menu-scroll.js"></script>
+  <script src="web-files/js/unslider-min.js"></script>
+  <script src="web-files/js/function-slides.js"></script>
+  <script src="web-files/js/efeitos-site.js"></script>
+  <!-- endbuild -->
+
+  <!-- Angular Dependencias -->
+  <!-- build:js web-files/js/app-angular.min.js  -->
+  <script src="../node_modules/angular/angular.js"></script>
+  <script src="../node_modules/angular-route/angular-route.js"></script>
+  <script src="../node_modules/angular-sanitize/angular-sanitize.js"></script>
+  <!-- endbuild -->
+
+  <!-- Angular APP -->
+  <!-- build:js web-files/js/component-angular.min.js  -->
+  <script src="./app/app.module.js"></script>
+  <script src="./app/app.config.js"></script>
+  <script src="./app/components/programacao-skol/programacao-skol.controller.js"></script>
+  <script src="./app/components/programacao-skol/programacao-skol.service.js"></script>
+  <script src="./app/directives/shows-skol/shows-skol.directive.js"></script>
+  <script src="./app/directives/menu-selected/menu-selected.directive.js"></script>
+  <!-- endbuild -->
+  
+  <!-- analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-91329325-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  
+</body>
+</html>

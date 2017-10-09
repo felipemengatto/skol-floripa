@@ -1,0 +1,17 @@
+<div class="m-programacao-box style-shadow-paper">
+
+  <div class="m-programacao-box-dias">
+    <ul class="m-programacao-box-dias-itens">
+      <li 
+        ng-repeat="item in progSkolCtrl.programacaoList track by $index" 
+        ng-click="progSkolCtrl.selectItem(item);"
+        menu-selected 
+        ng-class="!item.id ? 'style-color-yellow style-border-bottom-yellow' : '' ">
+        {{item.name}}.<span class="style-is-bold">{{item.dia}}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div show-skol class="show-skol" show-list="progSkolCtrl.showList"></div>
+
+</div>

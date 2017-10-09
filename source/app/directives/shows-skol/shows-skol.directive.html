@@ -1,0 +1,29 @@
+<div class="m-programacao-box-imagem">
+	<div class="m-programacao-box-imagem-item">
+		<img class="is-hidden-slider" ng-src="" />
+	</div><!-- end .m-programacao-box-imagem-item -->
+</div>
+
+<div class="m-programacao-box-show">
+	<ul class="m-programacao-box-show-itens is-hidden-slider">
+		<li class="m-programacao-box-show-item style-is-bold">{{descList.dia}}</li>
+		<li class="m-programacao-box-show-item">{{descList.hora}}</li>
+		<li class="m-programacao-box-show-item style-color-yellow" ng-bind-html="descList.local"></li>
+		<li class="m-programacao-box-show-item">Atrações</li>
+		<li ng-if="descList.dia == '18.FEV' " class="m-programacao-box-show-item-dj-artista" 
+				ng-repeat="item in descList.atracoes track by $index"> {{item.nome}} </li>
+
+		<li ng-if="descList.dia == '19.FEV' " class="m-programacao-box-show-item-dj-artista">
+				<div class="m-programacao-box-show-item-div">
+					<img class="m-programacao-box-show-item-imagem" src="web-files/images/prog-trio.png"/> 
+					<ul>
+						<li ng-repeat="item in descList.atracoes track by $index">{{item.nome}}</li>
+					</ul> 
+				</div><!-- end .m-programacao-box-show-item-div -->
+		</li>
+
+		<li ng-if="descList.dia != '18.FEV' && descList.dia != '19.FEV' " 
+				class="m-programacao-box-show-item-artista style-color-yellow" 
+				ng-repeat="item in descList.atracoes track by $index"> {{item.nome}} </li>
+	</ul>
+</div>

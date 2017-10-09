@@ -1,0 +1,70 @@
+{
+
+	"dias": [
+		{
+			"id": 0,
+			"name": "SÁB",
+			"dia": "18.FEV",
+			"hora": "DAS 14H ÀS 21H", 
+			"local": "Barra sul <br> Balneário Camboriú", 
+			"atracoes": [{"nome": "14:00 DROPACK"}, {"nome": "15:00 VINNE"},
+				{"nome": "16:00 LIU"}, {"nome": "17:00 BHASKAR"}, {"nome": "18:00 ALOK"}, {"nome": "19:30 SEVENN"}],
+			"imagem": "web-files/images/dj_alok.png"
+		},
+		{
+			"id": 1,
+			"name": "DOM",
+			"dia": "19.FEV",
+			"hora": "DAS 14H ÀS 21H", 
+			"local": "Praça Fernando Machado", 
+			"atracoes": [{"nome": "14:00 DROPACK"}, {"nome": "15:00 VINNE"},
+				{"nome": "16:00 LIU"}, {"nome": "17:00 BHASKAR"}, {"nome": "18:00 ALOK"}, {"nome": "19:30 SEVENN"}],
+			"imagem": "web-files/images/dj_alok.png"
+		},
+		{
+			"id": 2,
+			"name": "SEX",
+			"dia": "24.FEV",
+			"hora": "DAS 21H ÀS 2H", 
+			"local": "Avenida Paulo Fontes", 
+			"atracoes": [{"nome": "LUDMILA"}, {"nome": "MC KORINGA"}],
+			"imagem": "web-files/images/ludmilla.png"
+		},
+		{
+			"id": 3,
+			"name": "Sáb",
+			"dia": "25.FEV",
+			"hora": "DAS 13H ÀS 19H", 
+			"local": "Avenida Paulo Fontes", 
+			"atracoes": [{"nome": "BLOCO DOS SUJOS"}, {"nome": "OS HAWAIANOS"}],
+			"imagem": "web-files/images/os_hawaianos.png"
+		},
+		{
+			"id": 4,
+			"name": "DOM",
+			"dia": "26.FEV",
+			"hora": "DAS 21H ÀS 2H", 
+			"local": "Avenida Paulo Fontes", 
+			"atracoes": [{"nome": "TURMA DO PAGODE"}, {"nome": "MC SAPÃO"}],
+			"imagem": "web-files/images/turma_do_pagode.png"
+		},
+		{
+			"id": 5,
+			"name": "SEG",
+			"dia": "27.FEV",
+			"hora": "DAS 21H ÀS 2H", 
+			"local": "Avenida Paulo Fontes", 
+			"atracoes": [{"nome": "LEXA"}, {"nome": "POP GAY"}],
+			"imagem": "web-files/images/lexa.png"
+		},
+		{
+			"id": 6,
+			"name": "TER",
+			"dia": "28.FEV",
+			"hora": "DAS 21H ÀS 2H", 
+			"local": "Avenida Paulo Fontes", 
+			"atracoes": [{"nome": "JOTA QUEST"}, {"nome": "MELANINA CARIOCA"}],
+			"imagem": "web-files/images/jquest.png"
+		}
+		]
+}
